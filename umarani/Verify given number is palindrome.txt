@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main()
+{
+   int p,n,r,s;
+   printf("enter any value(p)");
+   scanf("%d",&p);
+   n=p;
+for(s=0;n>0;n=n/10){
+r = n%10;
+s=s*10+r;
+}
+if(p==s)
+{
+    printf("given number %d is a palindrome",p);
+}
+    return 0;
+}

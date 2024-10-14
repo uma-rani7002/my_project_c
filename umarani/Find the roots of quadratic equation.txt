@@ -1,0 +1,18 @@
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+    int x1,x2,delta,a,b,c,y;
+    printf("enter(a,b,c) values:");
+    scanf("%d%d%d",&a,&b,&c);
+    delta=(pow(b,2)-4*a*c);
+    x1=(-b+sqrt(delta))/2*a,x2=(-b-sqrt(delta))/2*a;
+    y=-b/2*a;
+    if(delta>0)
+        printf("%d,%d are real and distinct roots",x1,x2);
+    else if(delta==0)
+        printf("%d is real and equal roots",y);
+    else
+        printf("imaginary roots");
+
+}

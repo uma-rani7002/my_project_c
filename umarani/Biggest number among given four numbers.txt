@@ -1,0 +1,30 @@
+#include <stdio.h>
+
+int main()
+{
+    int a,b,c,d;
+    printf("enter any four values:");
+    scanf("%d%d%d%d",&a,&b,&c,&d);
+    if(a>b)
+    {
+        if(a>c&&a>d)
+            printf("a=%d is big",a);
+        else
+        {
+            if(c>d)
+                printf("c=%d is big",c);
+        }
+    }
+    else
+    {
+        if(b>c&&b>d)
+            printf("b=%d is big",b);
+        else
+        {
+            if(c>d)
+                printf("c=%d is big",c);
+            else
+                printf("d=%d is big",d);
+        }
+    }
+}
